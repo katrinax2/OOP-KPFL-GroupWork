@@ -1,0 +1,27 @@
+# Compiled Java bytecode
+*.class
+*.jar
+*.war
+
+# Build output directories
+bin/
+out/
+build/
+target/
+
+# IDE project files
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+*.iml
+
+# Runtime generated data (keeps sample data, ignores local test runs)
+data/runtime/*
+!data/runtime/.gitkeep
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
