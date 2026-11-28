@@ -23,3 +23,4 @@ KPFL-Management-System/
         ├── service/             # Business logic, scheduling, standings, file persistence
         ├── exception/           # Custom validation and business-rule exceptions
         └── util/                # Shared input validation and helper utilities
+

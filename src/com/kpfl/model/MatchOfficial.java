@@ -1,3 +1,4 @@
+package kpfl.model;
 public class MatchOfficial extends Person {
     private static final long serialVersionUID = 1L;
 

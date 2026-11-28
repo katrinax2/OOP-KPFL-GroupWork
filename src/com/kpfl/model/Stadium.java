@@ -1,3 +1,4 @@
+package kpfl.model;
 import java.io.Serializable;
 
 public class Stadium implements Serializable {
