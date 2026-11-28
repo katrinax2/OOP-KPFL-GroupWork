@@ -22,34 +22,31 @@ public class LeagueCommissioner extends Person {
         this.inspectionLogs = new ArrayList<>();
     }
 
-    // Core Commissioner Operations (Connects to teammates' FootballTeam & Fixture classes)
-    /*
-     * UNCOMMENT ONCE TEAMMATE CREATES FootballTeam, Fixture & MatchOfficial:
-     *
-     * public void approveTeamRegistration(FootballTeam team) throws KPFLValidationException {
-     *     if (team == null) {
-     *         throw new KPFLValidationException("Team cannot be null.");
-     *     }
-     *     team.setLeagueStatus("APPROVED");
-     *     logAction("Approved registration for team: " + team.getName());
-     * }
-     *
-     * public void suspendTeam(FootballTeam team, String reason) throws KPFLValidationException {
-     *     if (team == null) {
-     *         throw new KPFLValidationException("Team cannot be null.");
-     *     }
-     *     team.setLeagueStatus("SUSPENDED");
-     *     logAction("Suspended team " + team.getName() + " | Reason: " + reason);
-     * }
-     *
-     * public void authorizeOfficialAssignment(Fixture fixture, MatchOfficial official) throws KPFLValidationException {
-     *     if (fixture == null || official == null) {
-     *         throw new KPFLValidationException("Fixture and MatchOfficial cannot be null.");
-     *     }
-     *     fixture.assignOfficial(official);
-     *     logAction("Assigned Official " + official.getName() + " to Fixture " + fixture.getFixtureId());
-     * }
-     */
+    // Core Commissioner Operations (Connects to  FootballTeam & Fixture classes)
+     public void approveTeamRegistration(FootballTeam team) throws KPFLValidationException {
+          if (team == null) {
+              throw new KPFLValidationException("Team cannot be null.");
+         }
+         team.setLeagueStatus("APPROVED");
+          logAction("Approved registration for team: " + team.getName());
+      }
+     
+      public void suspendTeam(FootballTeam team, String reason) throws KPFLValidationException {
+          if (team == null) {
+              throw new KPFLValidationException("Team cannot be null.");
+          }
+          team.setLeagueStatus("SUSPENDED");
+          logAction("Suspended team " + team.getName() + " | Reason: " + reason);
+      }
+     
+      public void authorizeOfficialAssignment(Fixture fixture, MatchOfficial official) throws KPFLValidationException {
+          if (fixture == null || official == null) {
+              throw new KPFLValidationException("Fixture and MatchOfficial cannot be null.");
+          }
+         fixture.assignOfficial(official);
+         logAction("Assigned Official " + official.getName() + " to Fixture " + fixture.getFixtureId());
+      }
+     
 
     public void inspectMatchPreparation(String fixtureId, String stadiumName, boolean passed, String notes)
             throws KPFLValidationException {
