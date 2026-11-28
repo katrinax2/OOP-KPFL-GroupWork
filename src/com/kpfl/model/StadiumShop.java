@@ -89,7 +89,7 @@ public class StadiumShop {
             item.getKey().deductStock(item.getValue());
         }
 
-        SalesReceipt receipt = new SalesReceipt("STADIUM SHOP SALE", receiptLines, 	);
+        SalesReceipt receipt = new SalesReceipt("STADIUM SHOP SALE", receiptLines, payment);
         receipts.add(receipt);
         return receipt;
     }

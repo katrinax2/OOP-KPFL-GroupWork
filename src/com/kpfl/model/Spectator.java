@@ -30,7 +30,7 @@ public class Spectator {
         this.phoneNumber = phoneNumber == null ? "" : phoneNumber.trim();
     }
 
-    Override
+    @Override 
     public String toString() {
         return spectatorId + " - " + fullName + " | " + email + " | " + phoneNumber;
     }
