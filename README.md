@@ -67,3 +67,8 @@ KPFL_Management_System/
             ├── model/
             ├── service/
             └── util/
+
+
+
+## Group Members
+Katrina Watson - 2404855
